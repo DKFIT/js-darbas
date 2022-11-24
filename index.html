@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row h-25 text-center my-5">
+            <H1>Vanilla JavaScript and Local Storage</H1>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="row h-75">
+            <div class="col-sm-12 col-md-6 ">
+                <form id="insectdata">
+                    <div>
+                        <label for="productCode" class="m-3 ">Product code</label>
+                        <input class="form-control m-3" id='productCode' type="text" placeholder="Only numbers"
+                            aria-label="default input example">
+
+                    </div>
+                    <div>
+                        <label for="productName" class="m-3">Product name</label>
+                        <input class="form-control m-3" id='productName' type="text" placeholder="Default input"
+                            aria-label="default input example">
+                    </div>
+                    <div>
+                        <label for="productQ" class="m-3">Product quantity</label>
+                        <input class="form-control m-3" id='productQ' type="text" placeholder="Default input"
+                            aria-label="default input example">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-around align-items-center">
+                        <button type="submit" id='Insert' class="btn btn-secondary btn-sm">Insert</button>
+                        <button id='Delete' class="btn btn-secondary btn-sm">Delete</button>
+                    </div>
+                    </form>
+
+            </div>
+            
+            <div class="col-sm-12 col-md-6">
+                <div>
+                    <label for="productCode" class="m-3 ">Product code</label>
+                    <input class="form-control m-3" id="getproductCode" type="text" placeholder="Only numbers"
+                        aria-label="default input example">
+                    <button type="button" id='GetData' class="btn btn-secondary btn-sm m-3">Get Data</button>
+                    <br>
+                    <div id="retrieve"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="./js.js"></script>
+</body>
+
+</html>
